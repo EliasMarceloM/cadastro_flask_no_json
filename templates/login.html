@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Cadastro </title>
+</head>
+<body>
+
+<h1>página de login</h1>
+
+<form action="{{ url_for('login') }}" method="POST">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Senha:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="entrar">
+</form> 
+<p>{{ya}}</p>
+</body>
+</html>
