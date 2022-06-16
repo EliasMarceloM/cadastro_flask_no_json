@@ -100,13 +100,13 @@ def login():
         f = open("senha.json", "r")
         jsonDadosUsuario = json.load(f) # carrega o nome do usurio e senha
         if name == jsonDadosUsuario["usuario"]:
-            acessoLiberado=1 
+            acessoLiberado+=1 
             print("usurário correto")
         else:
             acessoLiberado=0
             print("usurário errado")
         if senha == jsonDadosUsuario["senha"]:
-            acessoLiberado=2
+            acessoLiberado+=1 
             print("senha correta")
         else:
             acessoLiberado=0
